@@ -1,3 +1,11 @@
+:root {
+    --main-text: #0e0e0f;
+    --main-green: #00bb78;
+    --slider-pagination-default: #e2e3e5;
+    --title-main: #18191f;
+    --main-dark: #000;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +22,14 @@ a {
     text-decoration: none;
 }
 
-:root {
-    --main-text: #0e0e0f;
-    --main-green: #00bb78;
-    --slider-pagination-default: #e2e3e5;
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    color: var(--title-main);
 }
