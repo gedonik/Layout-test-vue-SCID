@@ -1,6 +1,9 @@
 <template>
   <AppHeader/>
-  <AppSlider/>
+  <main>
+    <AppSlider/>
+    <AppServices/>
+  </main>
 </template>
 
 <script>
@@ -8,10 +11,11 @@
 
 import AppHeader from "@/components/AppHeader";
 import AppSlider from "@/components/AppSlider";
+import AppServices from "@/components/AppServices";
 
 export default {
   name: 'App',
-  components: {AppSlider, AppHeader},
+  components: {AppServices, AppSlider, AppHeader},
 }
 </script>
 

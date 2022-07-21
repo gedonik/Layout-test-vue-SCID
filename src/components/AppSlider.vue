@@ -1,5 +1,4 @@
 <template>
-  <main>
     <section class="slider">
       <swiper
           :modules="modules"
@@ -39,7 +38,6 @@
 
       </swiper>
     </section>
-  </main>
 </template>
 
 <script>
