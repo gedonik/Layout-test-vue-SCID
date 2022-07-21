@@ -14,15 +14,13 @@ export default {
 </script>
 
 <style lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 #app {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 15px;
+  font-family: OpenSans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fff;
 }
 </style>
