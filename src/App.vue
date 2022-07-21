@@ -1,15 +1,17 @@
 <template>
   <AppHeader/>
+  <AppSlider/>
 </template>
 
 <script>
 
 
 import AppHeader from "@/components/AppHeader";
+import AppSlider from "@/components/AppSlider";
 
 export default {
   name: 'App',
-  components: {AppHeader},
+  components: {AppSlider, AppHeader},
 }
 </script>
 
