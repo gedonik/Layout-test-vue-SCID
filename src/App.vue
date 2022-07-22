@@ -1,21 +1,23 @@
 <template>
   <AppHeader/>
+
   <main>
     <AppSlider/>
     <AppServices/>
   </main>
+
+  <AppFooter/>
 </template>
 
 <script>
-
-
 import AppHeader from "@/components/AppHeader";
 import AppSlider from "@/components/AppSlider";
 import AppServices from "@/components/AppServices";
+import AppFooter from "@/components/AppFooter";
 
 export default {
   name: 'App',
-  components: {AppServices, AppSlider, AppHeader},
+  components: {AppFooter, AppServices, AppSlider, AppHeader},
 }
 </script>
 
@@ -27,6 +29,6 @@ export default {
   font-family: OpenSans, sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #fff;
+  background-color: var(--main-light);
 }
 </style>
