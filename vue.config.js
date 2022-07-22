@@ -3,7 +3,10 @@ const path = require("path");
 
 module.exports = defineConfig({
   transpileDependencies: true,
-  outputDir: path.resolve(__dirname, "docs"),
-  publicPath: './',
+  publicPath: process.env.NODE_ENV === 'production'
+      ? '/Layout-test-vue-SCID/'
+      : '/'
+  // outputDir: path.resolve(__dirname, "docs"),
+  // publicPath: './',
   // assetsDir: "../../static/SPA"
 })
