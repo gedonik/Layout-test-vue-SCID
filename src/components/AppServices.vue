@@ -35,12 +35,12 @@ export default {
   data() {
     return {
       servicesList: [
-        {id: 1, img: 'services-1.jpg', description: 'Кадастровые работы в отношении земельных участков'},
-        {id: 2, img: 'services-2.jpg', description: 'Кадастровые работы в отношении земельных участков'},
-        {id: 3, img: 'services-3.jpg', description: 'Кадастровые работы в отношении земельных участков'},
-        {id: 4, img: 'services-4.jpg', description: 'Кадастровые работы в отношении земельных участков'},
-        {id: 5, img: 'services-5.jpg', description: 'Кадастровые работы в отношении земельных участков'},
-        {id: 6, img: 'services-6.jpg', description: 'Кадастровые работы в отношении земельных участков'},
+        {id: 1, img: 'services-1.jpg', description: 'Кадастровые работы в отношении земельных участков', hide: false},
+        {id: 2, img: 'services-2.jpg', description: 'Кадастровые работы в отношении земельных участков', hide: false},
+        {id: 3, img: 'services-3.jpg', description: 'Кадастровые работы в отношении земельных участков', hide: false},
+        {id: 4, img: 'services-4.jpg', description: 'Кадастровые работы в отношении земельных участков', hide: false},
+        {id: 5, img: 'services-5.jpg', description: 'Кадастровые работы в отношении земельных участков', hide: false},
+        {id: 6, img: 'services-6.jpg', description: 'Кадастровые работы в отношении земельных участков', hide: false},
         {id: 7, img: 'services-5.jpg', description: 'Кадастровые работы в отношении земельных участков', hide: true},
         {id: 8, img: 'services-1.jpg', description: 'Кадастровые работы в отношении земельных участков', hide: true},
         {id: 9, img: 'services-4.jpg', description: 'Кадастровые работы в отношении земельных участков', hide: true},
