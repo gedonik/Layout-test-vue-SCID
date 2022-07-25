@@ -6,43 +6,33 @@
           <img class="logo__img" src="../assets/icons/logo.svg" alt="логотип">
         </a>
 
-        <ul class="header__list">
-          <li class="header__item">
-            <a class="logo header__link" href="#">
-              Кейсы
-            </a>
-          </li>
-          <li class="header__item">
-            <a class="logo header__link" href="#">
-              Бизнесу
-            </a>
-          </li>
-          <li class="header__item">
-            <a class="logo header__link" href="#">
-              Услуги
-            </a>
-          </li>
-          <li class="header__item">
-            <a class="logo header__link" href="#">
-              Контакты
-            </a>
-          </li>
+        <div class="spacer"></div>
 
-          <ui-button>
-            Заказать звонок
-          </ui-button>
-        </ul>
-
+        <AppHeaderList :list="headerList"/>
+        <ui-button>
+          Заказать звонок
+        </ui-button>
       </nav>
     </div>
   </header>
 </template>
 
 <script>
+import AppHeaderList from "@/components/ui/AppHeaderList";
+
 export default {
   name: "AppHeader",
-  components: {}
-
+  components: {AppHeaderList},
+  data() {
+    return {
+      headerList: [
+        {title: 'Кейсы', link: '#', mark: false},
+        {title: 'Бизнесу', link: '#', mark: true},
+        {title: 'Услуги', link: '#', mark: false},
+        {title: 'Контакты', link: '#', mark: false},
+      ]
+    }
+  }
 }
 </script>
 
@@ -61,48 +51,11 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
   }
+}
 
-  &__list {
-    display: flex;
-    align-items: center;
-    margin-right: 40px;
-  }
-
-  &__item {
-    &:nth-child(2) {
-      padding-left: 21px;
-      position: relative;
-
-      &::before {
-        content: '';
-        position: absolute;
-        background-image: url("../assets/icons/star.svg");
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 14px;
-        height: 14px;
-        background-size: contain;
-        background-position: center;
-      }
-    }
-
-    &:not(:last-child) {
-      margin-right: 48px;
-    }
-  }
-
-  &__link {
-    text-transform: uppercase;
-    font-size: 16px;
-    color: var(--main-text);
-    transition: color 0.3s ease-in-out;
-
-    &:hover {
-      color: var(--main-green);
-    }
-  }
-
+.spacer {
+  flex-grow: 1;
 }
 </style>
