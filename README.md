@@ -1,24 +1,22 @@
-# vue-test-layout
 
-## Project setup
-```
-npm install
-```
+# Layout-test-vue-SCID is a Vue application.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Vue app test layout for SCID company.
 
-### Compiles and minifies for production
-```
-npm run build
+
+## Installation
+
+Clone my project, after type in terminal:
+
+```bash
+  npm install 
+  npm run serve
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Tech Stack
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+HTML, CSS, SCSS, Vue, Swiper.
+
+## Screenshots
+
+![App Screenshot](https://i.postimg.cc/2Sn8xMTD/SCID.jpg)
